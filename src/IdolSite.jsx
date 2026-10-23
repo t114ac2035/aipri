@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 import logoImg from "./assets/logo.png";
-import bgImg from "./assets/bg.JPG";       // 將 .jpg 改為大寫 .JPG
-import idolsImg from "./assets/idols.PNG"; // 將 .png 改為大寫 .PNG
+import bgImg from "./assets/bg.jpg";       // 改回小寫 .jpg
+import idolsImg from "./assets/idols.png"; // 改回小寫 .png
 import gradientImg from "./assets/gradient.png";
 import btnGameplay from "./assets/btn-gameplay.png";
 import btnCards from "./assets/btn-cards.png";
 import btnIdols from "./assets/btn-idols.png";
-import ytPng from "./assets/yt.PNG";
+import ytPng from "./assets/yt.png";       // 改回小寫 .png
 import sectionBgImg from "./assets/section-bg.png"; // 請確認你的粉色菱形底圖檔名，若是 png 請改為 .png
-import infoImg from "./assets/info.PNG";   // 將 .jpg 改為大寫 .JPG
+import infoImg from "./assets/info.jpg";
 import footBgImg from "./assets/foot.png";
 import igBtnImg from "./assets/ig.png";
 import sytBtnImg from "./assets/syt.png";
