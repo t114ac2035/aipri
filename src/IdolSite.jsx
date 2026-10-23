@@ -6,9 +6,9 @@ import gradientImg from "./assets/gradient.png";
 import btnGameplay from "./assets/btn-gameplay.png";
 import btnCards from "./assets/btn-cards.png";
 import btnIdols from "./assets/btn-idols.png";
-import ytPng from "./assets/yt.png";
+import ytPng from "./assets/yt.PNG";
 import sectionBgImg from "./assets/section-bg.png"; // 請確認你的粉色菱形底圖檔名，若是 png 請改為 .png
-import infoImg from "./assets/info.JPG";   // 將 .jpg 改為大寫 .JPG
+import infoImg from "./assets/info.PNG";   // 將 .jpg 改為大寫 .JPG
 import footBgImg from "./assets/foot.png";
 import igBtnImg from "./assets/ig.png";
 import sytBtnImg from "./assets/syt.png";
