@@ -1,3 +1,4 @@
+ 
 import { useState, useEffect } from "react";
 import logoImg from "./assets/logo.png";
 import bgImg from "./assets/bg.jpg";       // 改回小寫 .jpg
