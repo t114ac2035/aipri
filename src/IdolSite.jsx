@@ -477,69 +477,70 @@ function getCardImage(filename) {
 // 59 張卡片的完整文字資料
 const CARD_DATA = [
   // 四星 (1 ~ 19)
-  { id: 1, rarity: 4, character: "陽葵", name: "Poppin' Heart人氣螢光幻彩" },
-  { id: 2, rarity: 4, character: "美月", name: "Miracle Moon人氣螢光幻彩" },
-  { id: 3, rarity: 4, character: "櫻", name: "Scarlet Butterfly人氣螢光幻彩" },
-  { id: 4, rarity: 4, character: "陽葵", name: "俏皮可愛兔寶寶" },
-  { id: 5, rarity: 4, character: "美月", name: "俏皮可愛兔寶寶藍" },
-  { id: 6, rarity: 4, character: "陽葵", name: "甜甜圈甜點師" },
-  { id: 7, rarity: 4, character: "美月", name: "甜甜圈甜點師" },
-  { id: 8, rarity: 4, character: "美月", name: "Q彈果凍蘇打" },
-  { id: 9, rarity: 4, character: "陽葵", name: "Q彈果凍蘇打" },
-  { id: 10, rarity: 4, character: "櫻", name: "奢華莓果塔" },
-  { id: 11, rarity: 4, character: "櫻", name: "奢華莓果塔" },
-  { id: 12, rarity: 4, character: "陽葵", name: "迎賓櫻桃" },
-  { id: 13, rarity: 4, character: "美月", name: "迎賓櫻桃藍" },
-  { id: 14, rarity: 4, character: "美月", name: "閃耀水母藍" },
-  { id: 15, rarity: 4, character: "陽葵", name: "閃耀水母粉紅" },
-  { id: 16, rarity: 4, character: "櫻", name: "蝴蝶魔術" },
-  { id: 17, rarity: 4, character: "櫻", name: "蝴蝶魔術緋紅" },
-  { id: 18, rarity: 4, character: "陽葵", name: "生日快樂！陽葵" },
-  { id: 19, rarity: 4, character: "美月", name: "生日快樂！美月" },
+  { id: 1, rarity: 4, character: "ひまり", name: "Poppin' Heart人氣螢光幻彩" },
+  { id: 2, rarity: 4, character: "みつき", name: "Miracle Moon人氣螢光幻彩" },
+  { id: 3, rarity: 4, character: "サクラ", name: "Scarlet Butterfly人氣螢光幻彩" },
+  { id: 4, rarity: 4, character: "ひまり", name: "俏皮可愛兔寶寶" },
+  { id: 5, rarity: 4, character: "みつき", name: "俏皮可愛兔寶寶藍" },
+  { id: 6, rarity: 4, character: "ひまり", name: "甜甜圈甜點師" },
+  { id: 7, rarity: 4, character: "みつき", name: "甜甜圈甜點師" },
+  { id: 8, rarity: 4, character: "みつき", name: "Q彈果凍蘇打" },
+  { id: 9, rarity: 4, character: "ひまり", name: "Q彈果凍蘇打" },
+  { id: 10, rarity: 4, character: "サクラ", name: "奢華莓果塔" },
+  { id: 11, rarity: 4, character: "サクラ", name: "奢華莓果塔" },
+  { id: 12, rarity: 4, character: "ひまり", name: "迎賓サクラ桃" },
+  { id: 13, rarity: 4, character: "みつき", name: "迎賓サクラ桃藍" },
+  { id: 14, rarity: 4, character: "みつき", name: "閃耀水母藍" },
+  { id: 15, rarity: 4, character: "ひまり", name: "閃耀水母粉紅" },
+  { id: 16, rarity: 4, character: "サクラ", name: "蝴蝶魔術" },
+  { id: 17, rarity: 4, character: "サクラ", name: "蝴蝶魔術緋紅" },
+  { id: 18, rarity: 4, character: "ひまり", name: "生日快樂！ひまり" },
+  { id: 19, rarity: 4, character: "みつき", name: "生日快樂！みつき" },
 
   // 三星 (20 ~ 39)
-  { id: 20, rarity: 3, character: "陽葵", name: "偶像公主空間Poppin' Heart" },
-  { id: 21, rarity: 3, character: "陽葵", name: "偶像公主空間Poppin' Heart綠" },
-  { id: 22, rarity: 3, character: "美月", name: "偶像公主空間Miracle Moon" },
-  { id: 23, rarity: 3, character: "美月", name: "偶像公主空間Miracle Moon橙" },
-  { id: 24, rarity: 3, character: "櫻", name: "偶像公主空間Scarlet Butterfly" },
-  { id: 25, rarity: 3, character: "櫻", name: "偶像公主空間Scarlet Butterfly" },
-  { id: 26, rarity: 3, character: "陽葵", name: "花朵薄紗" },
-  { id: 27, rarity: 3, character: "美月", name: "花朵薄紗" },
-  { id: 28, rarity: 3, character: "美月", name: "花朵薄紗薄荷" },
-  { id: 29, rarity: 3, character: "陽葵", name: "花朵薄紗薄荷" },
-  { id: 30, rarity: 3, character: "櫻", name: "華麗寶石" },
-  { id: 31, rarity: 3, character: "櫻", name: "華麗寶石" },
-  { id: 32, rarity: 3, character: "美月", name: "蜜蜂" },
-  { id: 33, rarity: 3, character: "陽葵", name: "蜜蜂" },
-  { id: 34, rarity: 3, character: "美月", name: "星星音符" },
-  { id: 35, rarity: 3, character: "陽葵", name: "星星音符" },
-  { id: 36, rarity: 3, character: "陽葵", name: "心形音符" },
-  { id: 37, rarity: 3, character: "美月", name: "心形音符" },
-  { id: 38, rarity: 3, character: "陽葵", name: "星星派對" },
-  { id: 39, rarity: 3, character: "美月", name: "星星派對草莓巧克力" },
+  { id: 20, rarity: 3, character: "ひまり", name: "偶像公主空間Poppin' Heart" },
+  { id: 21, rarity: 3, character: "ひまり", name: "偶像公主空間Poppin' Heart綠" },
+  { id: 22, rarity: 3, character: "みつき", name: "偶像公主空間Miracle Moon" },
+  { id: 23, rarity: 3, character: "みつき", name: "偶像公主空間Miracle Moon橙" },
+  { id: 24, rarity: 3, character: "サクラ", name: "偶像公主空間Scarlet Butterfly" },
+  { id: 25, rarity: 3, character: "サクラ", name: "偶像公主空間Scarlet Butterfly" },
+  { id: 60, rarity: 3, character: "しずく", name: "偶像公主空間Metal Chord" },
+  { id: 26, rarity: 3, character: "ひまり", name: "花朵薄紗" },
+  { id: 27, rarity: 3, character: "みつき", name: "花朵薄紗" },
+  { id: 28, rarity: 3, character: "みつき", name: "花朵薄紗薄荷" },
+  { id: 29, rarity: 3, character: "ひまり", name: "花朵薄紗薄荷" },
+  { id: 30, rarity: 3, character: "サクラ", name: "華麗寶石" },
+  { id: 31, rarity: 3, character: "サクラ", name: "華麗寶石" },
+  { id: 32, rarity: 3, character: "みつき", name: "蜜蜂" },
+  { id: 33, rarity: 3, character: "ひまり", name: "蜜蜂" },
+  { id: 34, rarity: 3, character: "みつき", name: "星星音符" },
+  { id: 35, rarity: 3, character: "ひまり", name: "星星音符" },
+  { id: 36, rarity: 3, character: "ひまり", name: "心形音符" },
+  { id: 37, rarity: 3, character: "みつき", name: "心形音符" },
+  { id: 38, rarity: 3, character: "ひまり", name: "星星派對" },
+  { id: 39, rarity: 3, character: "みつき", name: "星星派對草莓巧克力" },
 
   // 二星 (40 ~ 59)
-  { id: 40, rarity: 2, character: "陽葵", name: "樂園學園1年級制服" },
-  { id: 41, rarity: 2, character: "美月", name: "樂園學園1年級制服" },
-  { id: 42, rarity: 2, character: "櫻", name: "樂園學園2年級制服" },
-  { id: 43, rarity: 2, character: "陽葵", name: "可愛偶像粉紅" },
-  { id: 44, rarity: 2, character: "陽葵", name: "可愛偶像粉紅" },
-  { id: 45, rarity: 2, character: "美月", name: "可愛偶像藍" },
-  { id: 46, rarity: 2, character: "美月", name: "可愛偶像藍" },
-  { id: 47, rarity: 2, character: "陽葵", name: "酷炫偶像粉紅" },
-  { id: 48, rarity: 2, character: "陽葵", name: "酷炫偶像粉紅" },
-  { id: 49, rarity: 2, character: "美月", name: "酷炫偶像藍" },
-  { id: 50, rarity: 2, character: "美月", name: "酷炫偶像藍" },
-  { id: 51, rarity: 2, character: "櫻", name: "酷炫偶像紅" },
-  { id: 52, rarity: 2, character: "陽葵", name: "快樂啦啦隊粉紅" },
-  { id: 53, rarity: 2, character: "陽葵", name: "快樂啦啦隊粉紅" },
-  { id: 54, rarity: 2, character: "美月", name: "快樂啦啦隊藍" },
-  { id: 55, rarity: 2, character: "美月", name: "快樂啦啦隊藍" },
-  { id: 56, rarity: 2, character: "陽葵", name: "輕便水手服粉紅" },
-  { id: 57, rarity: 2, character: "陽葵", name: "輕便水手服粉紅" },
-  { id: 58, rarity: 2, character: "美月", name: "輕便水手服藍" },
-  { id: 59, rarity: 2, character: "美月", name: "輕便水手服藍" },
+  { id: 40, rarity: 2, character: "ひまり", name: "樂園學園1年級制服" },
+  { id: 41, rarity: 2, character: "みつき", name: "樂園學園1年級制服" },
+  { id: 42, rarity: 2, character: "サクラ", name: "樂園學園2年級制服" },
+  { id: 43, rarity: 2, character: "ひまり", name: "可愛偶像粉紅" },
+  { id: 44, rarity: 2, character: "ひまり", name: "可愛偶像粉紅" },
+  { id: 45, rarity: 2, character: "みつき", name: "可愛偶像藍" },
+  { id: 46, rarity: 2, character: "みつき", name: "可愛偶像藍" },
+  { id: 47, rarity: 2, character: "ひまり", name: "酷炫偶像粉紅" },
+  { id: 48, rarity: 2, character: "ひまり", name: "酷炫偶像粉紅" },
+  { id: 49, rarity: 2, character: "みつき", name: "酷炫偶像藍" },
+  { id: 50, rarity: 2, character: "みつき", name: "酷炫偶像藍" },
+  { id: 51, rarity: 2, character: "サクラ", name: "酷炫偶像紅" },
+  { id: 52, rarity: 2, character: "ひまり", name: "快樂啦啦隊粉紅" },
+  { id: 53, rarity: 2, character: "ひまり", name: "快樂啦啦隊粉紅" },
+  { id: 54, rarity: 2, character: "みつき", name: "快樂啦啦隊藍" },
+  { id: 55, rarity: 2, character: "みつき", name: "快樂啦啦隊藍" },
+  { id: 56, rarity: 2, character: "ひまり", name: "輕便水手服粉紅" },
+  { id: 57, rarity: 2, character: "ひまり", name: "輕便水手服粉紅" },
+  { id: 58, rarity: 2, character: "みつき", name: "輕便水手服藍" },
+  { id: 59, rarity: 2, character: "みつき", name: "輕便水手服藍" },
 ];
 
 function CardsPage() {
@@ -626,6 +627,42 @@ function CardsPage() {
     </div>
   );
 }
+
+const GOODS_ITEMS = [
+  {
+    id: 1,
+    title: "祕密的偶像公主手環 粉色",
+    img: ringP,
+    price: "建議售價:450元",
+    desc: `和ひまり同款的公主手環。
+香氛貼紙盒裡面放的是摩擦後會散發玫瑰香味的香氛貼紙。
+附上的 QR 碼（存檔代碼）可以用在卡片遊戲機台「祕密的偶像公主」遊戲中進行資料存檔，而且還能提高觸發人氣螢光幻彩變身的機率！`
+  },
+  {
+    id: 2,
+    title: "祕密的偶像公主手環 藍色",
+    img: ringB,
+    price: "建議售價:450元",
+    desc: `和みつき同款的公主手環。
+香氛貼紙盒裡面放的是摩擦後會散發茉莉香味的香氛貼紙。
+附上的 QR 碼（存檔代碼）可以用在卡片遊戲機台「祕密的偶像公主」遊戲中進行資料存檔，而且還能提高觸發人氣螢光幻彩變身的機率！`
+  },
+  {
+    id: 3,
+    title: "祕密的偶像公主卡冊 粉色",
+    img: cardBookP,
+    price: "建議售價:350元",
+    desc: `可以收納《祕密偶像公主》卡牌的收藏冊（共 48 個卡槽）。
+封面採用超可愛的全新繪製插圖設計。`
+  },
+  {
+    id: 4,
+    title: "祕密的偶像公主卡冊 藍色",
+    img: cardBookB,
+    price: "建議售價:350元",
+    desc: `收錄48格卡片收納空間，採用ひまり與みつき限定封面設計，可愛又實用！`
+  }
+];
 
 function GoodsPage() {
   return (
