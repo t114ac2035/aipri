@@ -256,10 +256,10 @@ function HomePage({ goTo }) {
   );
 }
 
-const idolImages = import.meta.glob("./assets/角色介紹/*.png", { eager: true });
+const idolImages = import.meta.glob("./assets/characters/*.png", { eager: true });
 
 function getIdolImage(filename) {
-  const path = `./assets/角色介紹/${filename}`;
+  const path = `./assets/characters/${filename}`;
   return idolImages[path]?.default || "";
 }
 
@@ -463,10 +463,10 @@ function GameplayPage() {
 }
 
 // 動態載入愛埔里卡一彈資料夾內的所有圖片
-const cardImages = import.meta.glob("./assets/愛埔里卡一彈/*.png", { eager: true });
+const cardImages = import.meta.glob("./assets/cards/*.png", { eager: true });
 
 function getCardImage(filename) {
-  const path = `./assets/愛埔里卡一彈/${filename}`;
+  const path = `./assets/cards/${filename}`;
   return cardImages[path]?.default || "";
 }
 
