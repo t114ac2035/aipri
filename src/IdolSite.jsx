@@ -199,17 +199,21 @@ function HomePage({ goTo }) {
         {/* 【圖層 3 (z-30)】：Logo 與 3 個切圖按鈕 */}
         <div className="relative z-30 mx-auto flex h-full w-full max-w-6xl items-center px-6 md:px-12">
           <div className="flex flex-col items-start gap-6">
-            <img src={logoImg} alt="秘密的偶像公主" className="w-56 drop-shadow-lg md:w-80" />
+            <img 
+              src={logoImg} 
+              alt="秘密的偶像公主" 
+              className="w-[467px] h-[308px] object-contain drop-shadow-lg" 
+            />
             
             <div className="flex items-center gap-3">
               <button onClick={() => goTo("gameplay")} className="transition hover:scale-105">
-                <img src={btnGameplay} alt="遊戲玩法" className="h-10 md:h-12" />
+                <img src={btnGameplay} alt="遊戲玩法" className="w-[147px] h-[88px] object-contain" />
               </button>
               <button onClick={() => goTo("cards")} className="transition hover:scale-105">
-                <img src={btnCards} alt="卡片圖鑑" className="h-10 md:h-12" />
+                <img src={btnCards} alt="卡片圖鑑" className="w-[147px] h-[88px] object-contain" />
               </button>
               <button onClick={() => goTo("idols")} className="transition hover:scale-105">
-                <img src={btnIdols} alt="登場偶像" className="h-10 md:h-12" />
+                <img src={btnIdols} alt="登場偶像" className="w-[147px] h-[88px] object-contain" />
               </button>
             </div>
           </div>
